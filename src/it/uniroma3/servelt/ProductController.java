@@ -20,13 +20,13 @@ public class ProductController extends HttpServlet{
         String codice = req.getParameter("codice");
         if (req.getParameter("nome").isEmpty() || req.getParameter("prezzo").isEmpty()|| req.getParameter("codice").isEmpty()) {
             isAccettable = false;
-            req.setAttribute("errorMessage", "Attenzione uno dei campi è vuoto");
+            req.setAttribute("errorMessageEmpty", "Attenzione uno o piu' campi sono vuoti");
 
         }
         for (int i = 0; i<prezzo.length(); i++){
             if (prezzo.charAt(i)< '0' || prezzo.charAt(i)>'9') {
                 isAccettable = false;
-                req.setAttribute("errorMessage", "Attenzione il campo Prezzo presenta un carattere non accettabile");
+                req.setAttribute("errorMessageWrongCharacter", "Attenzione il campo Prezzo presenta un carattere non accettabile");
             }
 
         }
