@@ -1,0 +1,12 @@
+.errorMessage{
+    color: red;
+}
+
+.empty{
+    border-color: red;
+}
+
+#wrongCharacterInPrice{
+    color: red;
+    text-decoration: line-through;
+}

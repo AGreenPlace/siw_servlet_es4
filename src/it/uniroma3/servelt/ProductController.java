@@ -19,6 +19,15 @@ public class ProductController extends HttpServlet{
         String nome  = req.getParameter("nome");
         String codice = req.getParameter("codice");
         if (req.getParameter("nome").isEmpty() || req.getParameter("prezzo").isEmpty()|| req.getParameter("codice").isEmpty()) {
+            if (req.getParameter("nome").isEmpty()){
+                req.setAttribute("nameIsEmpty","empty");
+            }
+            if (req.getParameter("prezzo").isEmpty()){
+                req.setAttribute("priceIsEmpty","empty");
+            }
+            if (req.getParameter("codice").isEmpty()){
+                req.setAttribute("codeIsEmpty","empty");
+            }
             isAccettable = false;
             req.setAttribute("errorMessageEmpty", "Attenzione uno o piu' campi sono vuoti");
 
@@ -26,6 +35,7 @@ public class ProductController extends HttpServlet{
         for (int i = 0; i<prezzo.length(); i++){
             if (prezzo.charAt(i)< '0' || prezzo.charAt(i)>'9') {
                 isAccettable = false;
+                req.setAttribute("wrongCharacterInPrice","wrongCharacterInPrice");
                 req.setAttribute("errorMessageWrongCharacter", "Attenzione il campo Prezzo presenta un carattere non accettabile");
             }
 
