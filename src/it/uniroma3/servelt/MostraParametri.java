@@ -27,7 +27,6 @@ public class MostraParametri extends HttpServlet {
 		request.getSession().setAttribute("nome",nome);
 		request.getSession().setAttribute("prezzo", prezzo);
 		request.getSession().setAttribute("codice", codice);
-		//this.getServletContext().getRequestDispatcher(response.encodeURL("/mostraDatiInseriti")).forward(request,response);
 		this.getServletContext().getRequestDispatcher(response.encodeURL("/confirm.jsp")).forward(request,response);
 	}
 }

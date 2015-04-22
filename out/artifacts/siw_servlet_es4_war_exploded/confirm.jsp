@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
   <meta charset="ISO-8859-1" />
@@ -17,10 +18,10 @@
   <li>Nome: <b><%out.println(request.getSession().getAttribute("nome"));%></b></li>
   <li>Prezzo: <b><%out.println(request.getSession().getAttribute("prezzo"));%></b></li>
   </ul>
-<a href="<%out.println(response.encodeURL("/displayInformation.jsp"));%>">
-Conferma
-</a>
-<a href="/index.jsp">
+<form action="<c:url value="store"/>" method="post">
+  <input type="submit" name="confirm" value="conferma"  />
+</form>
+<a href="<c:url value="index.jsp"/>">
 Annulla
 </a>
 </body>
