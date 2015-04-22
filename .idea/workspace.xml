@@ -2,29 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="235a80f6-b07d-4d4d-bfcd-e366eab611b7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/it/uniroma3/servelt/Product.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/it/uniroma3/servelt/StorageHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/prodotti.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/siw_servlet_es4_war_exploded/WEB-INF/classes/it/uniroma3/servelt/MostraDati.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/siw_servlet_es4_war_exploded/WEB-INF/classes/it/uniroma3/servelt/MostraDatiInseriti.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/siw_servlet_es4/it/uniroma3/servelt/MostraDati.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/siw_servlet_es4/it/uniroma3/servelt/MostraDatiInseriti.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/it/uniroma3/servelt/MostraDati.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/it/uniroma3/servelt/MostraDatiInseriti.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/siw_servlet_es4_war_exploded/WEB-INF/classes/it/uniroma3/servelt/MostraParametri.class" afterPath="$PROJECT_DIR$/out/artifacts/siw_servlet_es4_war_exploded/WEB-INF/classes/it/uniroma3/servelt/MostraParametri.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/siw_servlet_es4/it/uniroma3/servelt/MostraParametri.class" afterPath="$PROJECT_DIR$/out/production/siw_servlet_es4/it/uniroma3/servelt/MostraParametri.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/siw_servlet_es4_war_exploded/WEB-INF/classes/it/uniroma3/servelt/ProductController.class" afterPath="$PROJECT_DIR$/out/artifacts/siw_servlet_es4_war_exploded/WEB-INF/classes/it/uniroma3/servelt/ProductController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/siw_servlet_es4/it/uniroma3/servelt/ProductController.class" afterPath="$PROJECT_DIR$/out/production/siw_servlet_es4/it/uniroma3/servelt/ProductController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/it/uniroma3/servelt/MostraParametri.java" afterPath="$PROJECT_DIR$/src/it/uniroma3/servelt/MostraParametri.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/siw_servlet_es4_war_exploded/confirm.jsp" afterPath="$PROJECT_DIR$/out/artifacts/siw_servlet_es4_war_exploded/confirm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/confirm.jsp" afterPath="$PROJECT_DIR$/web/confirm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/siw_servlet_es4_war_exploded/displayInformation.jsp" afterPath="$PROJECT_DIR$/out/artifacts/siw_servlet_es4_war_exploded/displayInformation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/displayInformation.jsp" afterPath="$PROJECT_DIR$/web/displayInformation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/siw_servlet_es4_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/siw_servlet_es4_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/siw_servlet_es4.iml" afterPath="$PROJECT_DIR$/siw_servlet_es4.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="siw_servlet_es4.iws" />
@@ -682,7 +659,7 @@
       <workItem from="1429516880693" duration="244000" />
       <workItem from="1429528484913" duration="5052000" />
       <workItem from="1429684400111" duration="5028000" />
-      <workItem from="1429703834358" duration="8501000" />
+      <workItem from="1429703834358" duration="8867000" />
     </task>
     <task id="LOCAL-00001" summary="working after setting up github">
       <created>1429517119800</created>
@@ -720,11 +697,17 @@
       <option name="project" value="LOCAL" />
       <updated>1429689761549</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added the ability to save the products inserted, the delete session link doesn't work with cookies enabled, the session is restarted only when closing the app on safari or restarting the server">
+      <created>1429715071402</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1429715071402</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35164000" />
+    <option name="totallyTimeSpent" value="35530000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -779,7 +762,8 @@
     <MESSAGE value="Everything is working, YAY!&#10;ps. Now there are different errors with different keys" />
     <MESSAGE value="Added EL implementation for simpler code" />
     <MESSAGE value="Everything is awesome!!&#10;ps. changed style attribute to css file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Everything is awesome!!&#10;ps. changed style attribute to css file" />
+    <MESSAGE value="Added the ability to save the products inserted, the delete session link doesn't work with cookies enabled, the session is restarted only when closing the app on safari or restarting the server" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the ability to save the products inserted, the delete session link doesn't work with cookies enabled, the session is restarted only when closing the app on safari or restarting the server" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
