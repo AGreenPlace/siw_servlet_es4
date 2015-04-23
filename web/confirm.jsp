@@ -15,9 +15,14 @@
 <body>
 <h1>Dati inseriti nella form</h1>
 <ul>
-  <li>Nome: <b><%out.println(request.getSession().getAttribute("nome"));%></b></li>
-  <li>Prezzo: <b><%out.println(request.getSession().getAttribute("prezzo"));%></b></li>
+  <li>Nome: <b>${nome}</b></li>
+  <li>Prezzo: <b>${prezzo}</b></li>
   </ul>
+<ol>
+  <c:forEach var="cookie" items="${cookies}">
+    <li>${cookie}</li>
+  </c:forEach>
+</ol>
 <form action="<c:url value="store"/>" method="post">
   <input type="submit" name="confirm" value="conferma"  />
 </form>

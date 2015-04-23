@@ -24,6 +24,9 @@
       <input type="submit" name="submit" value="invia"  />
     </form>
     <p><a href="<c:url value="prodotti.jsp"/>">Visualizza Prodotti</a></p>
-    <p><a href="/index.jsp">Cancella Sessione</a></p>
+    <form action="deleteCookie" method="post">
+      <input type="submit" name="deleteCookie" value="cancella cookie"  />
+    </form>
+
   </body>
 </html>

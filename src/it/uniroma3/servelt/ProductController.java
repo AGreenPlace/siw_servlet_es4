@@ -18,6 +18,7 @@ public class ProductController extends HttpServlet{
         String prezzo = req.getParameter("prezzo");
         String nome  = req.getParameter("nome");
         String codice = req.getParameter("codice");
+        req.getSession().setAttribute("cookies",req.getCookies());
         if (req.getParameter("nome").isEmpty() || req.getParameter("prezzo").isEmpty()|| req.getParameter("codice").isEmpty()) {
             if (req.getParameter("nome").isEmpty()){
                 req.setAttribute("nameIsEmpty","empty");
