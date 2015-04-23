@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="235a80f6-b07d-4d4d-bfcd-e366eab611b7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/it/uniroma3/servelt/CookieDeleter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/it/uniroma3/servelt/ProductController.java" afterPath="$PROJECT_DIR$/src/it/uniroma3/servelt/ProductController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/confirm.jsp" afterPath="$PROJECT_DIR$/web/confirm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/siw_servlet_es4_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/siw_servlet_es4_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/siw_servlet_es4_war_exploded/WEB-INF/classes/it/uniroma3/servelt/ProductController.class" afterPath="$PROJECT_DIR$/out/artifacts/siw_servlet_es4_war_exploded/WEB-INF/classes/it/uniroma3/servelt/ProductController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/siw_servlet_es4/it/uniroma3/servelt/ProductController.class" afterPath="$PROJECT_DIR$/out/production/siw_servlet_es4/it/uniroma3/servelt/ProductController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/siw_servlet_es4_war_exploded/confirm.jsp" afterPath="$PROJECT_DIR$/out/artifacts/siw_servlet_es4_war_exploded/confirm.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/displayInformation.jsp" afterPath="$PROJECT_DIR$/web/displayInformation.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="siw_servlet_es4.iws" />
@@ -68,17 +67,17 @@
         <entry file="file://$PROJECT_DIR$/src/it/uniroma3/servelt/MostraParametri.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+              <caret line="20" column="69" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="confirm.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="confirm.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/confirm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7284768">
-              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+            <state vertical-scroll-proportion="-11.875">
+              <caret line="25" column="20" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -96,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="displayInformation.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="displayInformation.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/displayInformation.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.25">
-              <caret line="23" column="42" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.70198673">
+              <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -167,12 +166,12 @@
         <option value="$PROJECT_DIR$/src/it/uniroma3/servelt/Product.java" />
         <option value="$PROJECT_DIR$/src/it/uniroma3/servelt/StorageHandler.java" />
         <option value="$PROJECT_DIR$/src/it/uniroma3/servelt/MostraParametri.java" />
-        <option value="$PROJECT_DIR$/web/displayInformation.jsp" />
         <option value="$PROJECT_DIR$/web/prodotti.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/it/uniroma3/servelt/CookieDeleter.java" />
         <option value="$PROJECT_DIR$/src/it/uniroma3/servelt/ProductController.java" />
         <option value="$PROJECT_DIR$/web/confirm.jsp" />
+        <option value="$PROJECT_DIR$/web/displayInformation.jsp" />
       </list>
     </option>
   </component>
@@ -676,7 +675,7 @@
       <workItem from="1429528484913" duration="5052000" />
       <workItem from="1429684400111" duration="5028000" />
       <workItem from="1429703834358" duration="10672000" />
-      <workItem from="1429775273648" duration="4025000" />
+      <workItem from="1429775273648" duration="5992000" />
     </task>
     <task id="LOCAL-00001" summary="working after setting up github">
       <created>1429517119800</created>
@@ -726,11 +725,17 @@
       <option name="project" value="LOCAL" />
       <updated>1429715255183</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Everything kinda works.&#10;Known issue:&#10;Method crashes following this sequence Run a session with cookie-&gt;Disable cookie-&gt;restart server-&gt;add a product.&#10;This is due the fact that cookie doesn't expire until browser process is killed nor is deleted automatically when setting cookies preferences">
+      <created>1429783345871</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1429783345871</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41360000" />
+    <option name="totallyTimeSpent" value="43327000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -786,7 +791,8 @@
     <MESSAGE value="Added EL implementation for simpler code" />
     <MESSAGE value="Everything is awesome!!&#10;ps. changed style attribute to css file" />
     <MESSAGE value="Added the ability to save the products inserted, the delete session link doesn't work with cookies enabled, the session is restarted only when closing the app on safari or restarting the server" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the ability to save the products inserted, the delete session link doesn't work with cookies enabled, the session is restarted only when closing the app on safari or restarting the server" />
+    <MESSAGE value="Everything kinda works.&#10;Known issue:&#10;Method crashes following this sequence Run a session with cookie-&gt;Disable cookie-&gt;restart server-&gt;add a product.&#10;This is due the fact that cookie doesn't expire until browser process is killed nor is deleted automatically when setting cookies preferences" />
+    <option name="LAST_COMMIT_MESSAGE" value="Everything kinda works.&#10;Known issue:&#10;Method crashes following this sequence Run a session with cookie-&gt;Disable cookie-&gt;restart server-&gt;add a product.&#10;This is due the fact that cookie doesn't expire until browser process is killed nor is deleted automatically when setting cookies preferences" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1171,55 +1177,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.25">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/uniroma3/servelt/StorageHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/uniroma3/servelt/MostraParametri.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/prodotti.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.375">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/displayInformation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.25">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/uniroma3/servelt/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1241,10 +1203,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.25">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma3/servelt/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma3/servelt/MostraParametri.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="69" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/confirm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7284768">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        <state vertical-scroll-proportion="-11.875">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma3/servelt/StorageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/displayInformation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70198673">
+          <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
           <folding />
         </state>
       </provider>
