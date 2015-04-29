@@ -18,8 +18,8 @@
   <li>Prezzo: <b>${prezzo}</b></li>
 </ul>
 <h2>Altri dati relativi alla richiesta</h2>
-<br />IP: <b>"${remoteAddress}"</b>
-<br />Host: <b>"${remoteHost}"</b>
+<br />IP: <b>"<%out.println(request.getRemoteAddr());%>"</b>
+<br />Host: <b>"<%out.println(request.getRemoteHost());%>"</b>
 <br />User Agent: <b>"<%out.println(request.getHeader("User-Agent"));%></b>
 <p><a href="<c:url value="prodotti.jsp" />">Lista Prodotti</a></p>
 </body>

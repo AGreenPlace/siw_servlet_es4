@@ -19,7 +19,7 @@ public class ProductController extends HttpServlet{
         String nome  = req.getParameter("nome");
         String codice = req.getParameter("codice");
         req.getSession().setAttribute("cookies",req.getCookies());
-        if (req.getParameter("nome").isEmpty() || req.getParameter("prezzo").isEmpty()|| req.getParameter("codice").isEmpty()) {
+        /*if (req.getParameter("nome").isEmpty() || req.getParameter("prezzo").isEmpty()|| req.getParameter("codice").isEmpty()) {
             if (req.getParameter("nome").isEmpty()){
                 req.setAttribute("nameIsEmpty","empty");
             }
@@ -40,7 +40,12 @@ public class ProductController extends HttpServlet{
                 req.setAttribute("errorMessageWrongCharacter", "Attenzione il campo Prezzo presenta un carattere non accettabile");
             }
 
-        }
+        }*/
+
+        String[] inputs = new String[]{nome,prezzo,codice};
+        int[] numericalIndexes = new int[]{2};
+        isAccettable = InputValidator.validateInputWithNumerical(inputs,numericalIndexes);
+
         if(isAccettable) {
             this.getServletContext().getRequestDispatcher(resp.encodeURL("/processaDati")).forward(req, resp);
 

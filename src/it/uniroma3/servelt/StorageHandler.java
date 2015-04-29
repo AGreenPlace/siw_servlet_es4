@@ -17,6 +17,7 @@ public class StorageHandler extends HttpServlet{
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<Product> productList;
+        Double prezzo = 0.0;
         if (req.getSession().getAttribute("productList")!= null){
             productList = (List<Product>)req.getSession().getAttribute("productList");
         }
@@ -25,7 +26,13 @@ public class StorageHandler extends HttpServlet{
         }
         String nome = (String)req.getSession().getAttribute("nome");
         String codice = (String)req.getSession().getAttribute("codice");
-        Double prezzo = new Double((String)req.getSession().getAttribute("prezzo"));
+        String prezzoString = (String) req.getSession().getAttribute("prezzo");
+        if(nome == null || codice==null||prezzoString==null){
+            req.getSession().invalidate();
+            req.getSession(true);
+            req.setAttribute("errorMessageEmpty","E' stata trovata un'incongruenza tra i cookie e la sessione, la sessione è stata resettata");
+            this.getServletContext().getRequestDispatcher(resp.encodeURL("/index.jsp")).forward(req,resp);
+        }
         Product newProduct = new Product(nome,codice,prezzo);
         productList.add(newProduct);
         req.getSession().setAttribute("productList",productList);
