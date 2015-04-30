@@ -6,7 +6,7 @@
     border-color: red;
 }
 
-#wrongCharacterInPrice{
+#notNumerical{
     color: red;
     text-decoration: line-through;
 }

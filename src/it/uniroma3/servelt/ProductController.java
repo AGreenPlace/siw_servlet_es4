@@ -42,9 +42,8 @@ public class ProductController extends HttpServlet{
 
         }*/
 
-        String[] inputs = new String[]{nome,prezzo,codice};
-        int[] numericalIndexes = new int[]{2};
-        isAccettable = InputValidator.validateInputWithNumerical(inputs,numericalIndexes);
+        String[] numericalFields = new String[]{"prezzo"};
+        isAccettable = InputValidator.validateInputWithNumerical(req,numericalFields);
 
         if(isAccettable) {
             this.getServletContext().getRequestDispatcher(resp.encodeURL("/processaDati")).forward(req, resp);

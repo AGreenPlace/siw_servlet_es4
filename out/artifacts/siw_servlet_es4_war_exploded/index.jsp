@@ -18,9 +18,9 @@
     <p class="errorMessage">${errorMessageEmpty}</p>
     <p class="errorMessage">${errorMessageWrongCharacter}</p>
     <form action="<c:url value="controllaDati"/>" method="get" >
-      Nome: <input class="${nameIsEmpty}" type="text" name="nome" onclick="this.style.borderColor = 'initial'"  value="${namePlaceholder}" />
-      Prezzo: <input class="${priceIsEmpty}" type="text" name="prezzo" id="${wrongCharacterInPrice}" onclick="this.style.textDecoration = 'none';this.style.color = 'black';this.style.borderColor = 'initial'" value="${pricePlaceholder}"/>
-      Codice: <input class="${codeIsEmpty}" type="text" name="codice" onclick="this.style.borderColor = 'initial'" value="${codePlaceholder}"/>
+      Nome: <input class="${nomeIsEmpty}" type="text" name="nome" onclick="this.style.borderColor = 'initial'"  value="${namePlaceholder}" />
+      Prezzo: <input class="${prezzoIsEmpty}" type="text" name="prezzo" id="${prezzoIsNotNumerical}" onclick="this.style.textDecoration = 'none';this.style.color = 'black';this.style.borderColor = 'initial'" value="${pricePlaceholder}"/>
+      Codice: <input class="${codiceIsEmpty}" type="text" name="codice" onclick="this.style.borderColor = 'initial'" value="${codePlaceholder}"/>
       <input type="submit" name="submit" value="invia"  />
     </form>
     <p><a href="<c:url value="prodotti.jsp"/>">Visualizza Prodotti</a></p>
