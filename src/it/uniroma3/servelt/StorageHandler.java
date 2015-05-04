@@ -27,6 +27,7 @@ public class StorageHandler extends HttpServlet{
         String nome = (String)req.getSession().getAttribute("nome");
         String codice = (String)req.getSession().getAttribute("codice");
         String prezzoString = (String) req.getSession().getAttribute("prezzo");
+        prezzo =  new Double(prezzoString);
         if(nome == null || codice==null||prezzoString==null){
             req.getSession().invalidate();
             req.getSession(true);
